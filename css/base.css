@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Spartan';
+}
+
+.container {
+  width: 35%;
+  padding: 0 32.5%;
+}
+
+.theme-section {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  margin: 15px 8px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.theme-num {
+  display: flex;
+  align-items:flex-end;
+  font-size: 13px;
+}
+
+label, #del, #reset {
+  text-transform: uppercase;
+}
+
+#del, #reset {
+  font-size: 18px;
+}
+
+label {
+  margin: 0 20px 7px 0;
+}
+
+#theme {
+  appearance: none;
+  width: 60px;
+  padding: 0 5px;
+  height: 25px;
+  outline: none;
+  border-radius: 100px;
+}
+
+#theme::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+#theme::-moz-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+#result-number {
+  width: 90%;
+  height: 45px;
+  padding: 25px 5% 15px 5%;
+  background: #ccc;
+  text-align: right;
+  font-size: 36px;
+  margin-bottom: 20px;
+  overflow: auto;
+  border: 0;
+}
+
+#result-number, #grid {
+  border-radius: 10px;
+}
+
+#grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5%;
+  background: #ccc;
+}
+
+.button {
+  padding: 10px 7%;
+  font-size: 32px;
+  margin: 8px;
+  border-radius: 5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid;
+}
+
+#reset {
+  grid-column: 1 / 3;
+  grid-row: 5;
+}
+
+#result {
+  grid-column: 3 / 5;
+  grid-row: 5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: #fff;
+  margin: 30px 0 0 0;
+  padding: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 655px) {
+  .container {
+    width: 85%;
+    padding: 0 7.5%;
+  }
+
+  .theme-section {
+    margin: 25px 5px;
+  }
+
+  .button {
+    margin: 7px;
+  }
+}

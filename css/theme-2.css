@@ -1,0 +1,43 @@
+body {
+  background: #e6e6e6;
+}
+
+ul, label, h1, #result-number {
+  color: #35352c;
+}
+
+#del, #reset, #result {
+  color: #fff;
+}
+
+#theme::-webkit-slider-thumb {
+  background: #d03f2f;
+}
+
+#theme::-moz-slider-thumb {
+  background: #d03f2f;
+}
+
+#grid, #theme {
+ background: #d1cccc;
+}
+
+#result-number {
+  background: #ededed;
+}
+
+#del, #reset {
+ background: #377f86;
+ border-color: #1b5f65;
+}
+
+#result {
+  background: #ca5502;
+  border-color: #893901;
+}
+
+.button {
+  background: #e5e4e1;
+  border-color: #a69d91;
+  color: #35352c;
+}

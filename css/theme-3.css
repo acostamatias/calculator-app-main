@@ -1,0 +1,39 @@
+body {
+  background: #160826;
+}
+
+ul, label, h1, #result-number, .button {
+  color: #ffe53d;
+}
+
+#del, #reset, #result {
+  color: #fff;
+}
+
+#theme::-webkit-slider-thumb {
+  background: #00e0d1;
+}
+
+#theme::-moz-slider-thumb {
+  background: #00e0d1;
+}
+
+#grid, #theme, #result-number {
+ background: #1d0934;
+}
+
+#del, #reset {
+ background: #58077d;
+ border-color: #bc15f4;
+}
+
+#result {
+  background: #00e0d1;
+  border-color: #6cf9f2;
+  color: #1b2428;
+}
+
+.button {
+  background: #341c4f;
+  border-color: #871c9c;
+}

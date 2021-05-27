@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <link href="./css/theme-1.css" rel="stylesheet" type="text/css" id="themecss">
+
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="theme-section">
+      <h1>calc</h1>
+      <div class="theme-num">
+        <label for="theme">Theme</label>
+        <div>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <input id="theme" onchange="changeTheme()" type="range" max="3" min="1" value="1">
+        </div>
+
+      </div>
+    </div>
+    <input type="text" id="result-number" value="" placeholder="0">
+    <div id="grid">
+      <button class="button" onclick="numbers(7)" id="7">7</button>
+      <button class="button" onclick="numbers(8)" id="8">8</button>
+      <button class="button" onclick="numbers(9)" id="9">9</button>
+      <button class="button" id="del">del</button>
+      <button class="button" onclick="numbers(4)" id="4">4</button>
+      <button class="button" onclick="numbers(5)" id="5">5</button>
+      <button class="button" onclick="numbers(6)" id="6">6</button>
+      <button class="button" onclick="numbers('+')" id="add">+</button>
+      <button class="button" onclick="numbers(1)" id="1">1</button>
+      <button class="button" onclick="numbers(2)" id="2">2</button>
+      <button class="button" onclick="numbers(3)" id="3">3</button>
+      <button class="button" onclick="numbers('-')" id="sus">-</button>
+      <button class="button" onclick="numbers('.')" id="dot">.</button>
+      <button class="button" onclick="numbers(0)" id="0">0</button>
+      <button class="button" onclick="numbers('/')" id="bar">/</button>
+      <button class="button" onclick="numbers('x')" id="x">x</button>
+      <button class="button col2" id="reset">reset</button>
+      <button class="button col2" id="result">=</button>
+    </div>
+  </section>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/acostamatias">Matias Acosta</a>.
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

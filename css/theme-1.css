@@ -1,0 +1,39 @@
+body {
+  background: #3a4764;
+}
+
+ul, label, h1, #del, #reset, #result, #result-number {
+  color: #fff;
+}
+
+#theme::-webkit-slider-thumb {
+  background: #d03f2f;
+}
+
+#theme::-moz-slider-thumb {
+  background: #d03f2f;
+}
+
+#grid, #theme {
+ background: #232c43;
+}
+
+#result-number {
+  background: #182034;
+}
+
+#del, #reset {
+ background: #637097;
+ border-color: #404e72;
+}
+
+#result {
+  background: #d03f2f;
+  border-color: #93261a;
+}
+
+.button {
+  background: #eae3dc;
+  border-color: #b4a597;
+  color: #444b5a;
+}
