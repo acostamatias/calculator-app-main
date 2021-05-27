@@ -34,12 +34,12 @@ const numbers = (num) => {
 
 document.querySelector('#result').addEventListener('click', () => {
   let add = document.querySelector('#result-number').value
-  let sign = ''
+  let symbol = ''
   let position = ''
   for (let i = 0; i < add.length; i++) {
-    if (isNaN(add.toString().charAt(i))) {
+    if (/[-+/x]/.test(add.toString().charAt(i))) {
       position = i
-      sign = add.toString().charAt(i)
+      symbol = add.toString().charAt(i)
     }
   }
 
@@ -47,7 +47,7 @@ document.querySelector('#result').addEventListener('click', () => {
   position++
   let b = parseFloat(add.substring(position, add.length))
 
-  switch (sign) {
+  switch (symbol) {
     case '+':
       document.querySelector('#result-number').value = parseFloat(a+b)
       break;
